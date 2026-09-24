@@ -95,14 +95,6 @@ html.is-loading,html.is-loading body{overflow:hidden}
 .gozen-seal{position:absolute;left:-28px;bottom:26px;z-index:2;padding:18px 20px;background:rgba(8,37,52,.92);color:#fff;box-shadow:0 20px 40px rgba(8,37,52,.22)}
 .gozen-seal b{display:block;font:500 24px/1.35 var(--s);margin-bottom:4px}
 .gozen-seal span{display:block;font:400 9px/1.5 Georgia,serif;letter-spacing:.24em;color:#9fd7e9}
-.gozen-darkband{background:linear-gradient(180deg,#0b2837,#071923);color:#fff;padding:44px 0}
-.gozen-darkband .band-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:42px;align-items:center}
-.gozen-darkband .big{font:500 clamp(32px,3.5vw,52px)/1.76 var(--s)}
-.gozen-darkband .copy{color:#d4e3e7}
-.gozen-darkband .mini-facts{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:#ffffff22;border:1px solid #ffffff24}
-.gozen-darkband .mini-facts div{padding:18px 16px;background:#ffffff08}
-.gozen-darkband .mini-facts b{display:block;font:500 18px var(--s)}
-.gozen-darkband .mini-facts span{display:block;font:400 8px Georgia,serif;letter-spacing:.18em;color:#a1d6e8;margin-top:7px}
 .profile-v4 .profile-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:42px}
 .profile-v4 .profile-card{position:relative;padding:34px 28px 30px;background:#fff;border:1px solid var(--l);min-height:252px;box-shadow:0 16px 34px rgba(18,56,76,.05)}
 .profile-v4 .profile-card:before{content:"";position:absolute;left:28px;top:0;width:72px;height:3px;background:var(--b)}
@@ -153,10 +145,10 @@ html.is-loading,html.is-loading body{overflow:hidden}
 .trade-banner{margin-top:26px;padding:30px 32px;background:linear-gradient(135deg,#eaf4f7,#f8fbfc 60%,#fff);display:flex;justify-content:space-between;align-items:center;gap:25px;border:1px solid var(--l)}
 .trade-banner h3{font:500 26px var(--s);margin:0 0 4px}
 @media(max-width:900px){
- .gozen-hero-v4,.gozen-darkband .band-grid,.botanical-stage-v4,.stores-v4 .store-top{grid-template-columns:1fr}
+ .gozen-hero-v4,.botanical-stage-v4,.stores-v4 .store-top{grid-template-columns:1fr}
  .gozen-kv{order:-1}
  .gozen-seal{left:18px;bottom:18px}
- .gozen-meta,.gozen-darkband .mini-facts,.profile-v4 .profile-grid,.serve-grid-v4,.stock-grid{grid-template-columns:1fr}
+ .gozen-meta,.profile-v4 .profile-grid,.serve-grid-v4,.stock-grid{grid-template-columns:1fr}
  .botanical-tags{grid-template-columns:1fr 1fr}
 }
 @media(max-width:650px){
@@ -192,6 +184,61 @@ html.is-loading,html.is-loading body{overflow:hidden}
 <style id="v6-image-overrides">
 .hero:before{background-image:url('assets/gozen-shiramine-main.jpeg')!important;background-position:center 48%!important;background-size:cover!important}.hero:after{background:linear-gradient(90deg,rgba(5,22,33,.84) 0%,rgba(5,22,33,.55) 38%,rgba(5,22,33,.02) 70%),linear-gradient(0deg,rgba(5,22,33,.5),transparent 45%)!important}.landart{background:linear-gradient(180deg,rgba(8,42,59,.04),rgba(8,42,59,.72)),url('assets/gozen-shiramine-main.jpeg') center 36%/cover no-repeat!important}.tv{background:url('assets/gozen-shiramine-main.jpeg') center 58%/cover no-repeat!important}.tv:after{content:"WHITE PEAK / PURE WATER / LOCAL BOTANICALS"!important}.header-official-logo{width:clamp(205px,20vw,320px)!important;max-height:55px!important}.footer-official-logo{filter:none!important;background:#fff;padding:12px;width:clamp(250px,28vw,390px)!important}
 @media(max-width:650px){.hero:before{background-position:59% 48%!important}.landart{background-position:center 38%!important}.tv{background-position:center 56%!important}.header-official-logo{width:175px!important}}
+</style>
+<style id="gozen-origin-v12">
+/* GOZEN V12: this section only. Keep the rest of the site unchanged. */
+.gozen-darkband.gozen-origin{
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+  padding:clamp(56px,5.3vw,80px) 0 clamp(54px,5vw,76px);
+  background:radial-gradient(ellipse at 50% 0,rgba(83,140,157,.09),transparent 70%),linear-gradient(180deg,#0b2837,#071923);
+  color:#f3f6f5;
+}
+.gozen-origin .origin-inner{max-width:1200px;position:relative;z-index:1;min-width:0}
+.gozen-origin .origin-heading{max-width:800px;margin:0 auto;text-align:center}
+.gozen-origin .origin-kicker{display:flex;justify-content:center;align-items:center;gap:16px;flex-wrap:wrap;font-size:11px;line-height:1.8;font-weight:400;letter-spacing:.08em;color:#d5e3e5}
+.gozen-origin .origin-kicker-en{padding-left:16px;border-left:1px solid #607b87;font-family:Georgia,"Times New Roman",serif;font-size:10px;letter-spacing:.17em;color:#adcbd3}
+.gozen-origin .origin-title{margin:24px 0 0;font-family:"Yu Mincho","Hiragino Mincho ProN","Noto Serif CJK JP","Noto Serif JP",serif;font-size:clamp(34px,3.45vw,46px);font-weight:500;line-height:1.52;letter-spacing:.07em;color:#f3f6f5}
+.gozen-origin .origin-title>span{display:block;white-space:nowrap}
+.gozen-origin .origin-title>span+span{margin-top:3px}
+.gozen-origin .origin-description{margin:23px 0 0;font-size:14px;font-weight:400;line-height:2;letter-spacing:.045em;color:#c1d0d5}
+.gozen-origin .origin-description>span{display:inline-block;max-width:100%}
+.gozen-origin .origin-features{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin:38px 0 0;padding:0;border:0;border-top:1px solid #38525f;border-bottom:1px solid #38525f;background:transparent;text-align:center}
+.gozen-origin .origin-feature{min-width:0;margin:26px 0;padding:0 clamp(14px,2.4vw,36px)}
+.gozen-origin .origin-feature+.origin-feature{border-left:1px solid #38525f}
+.gozen-origin .origin-feature dt,.gozen-origin .origin-feature dd{margin:0;padding:0}
+.gozen-origin .origin-feature-index{display:block;font-family:Georgia,"Times New Roman",serif;font-size:10px;line-height:1.7;font-weight:400;letter-spacing:.15em;color:#a7c7d2}
+.gozen-origin .origin-feature-title{display:block;margin-top:9px;font-family:"Yu Mincho","Hiragino Mincho ProN","Noto Serif CJK JP","Noto Serif JP",serif;font-size:24px;font-weight:500;line-height:1.5;letter-spacing:.12em;color:#f0f5f5}
+.gozen-origin .origin-feature dd{margin-top:9px;font-size:12px;line-height:1.9;letter-spacing:.015em;color:#c1d0d5}
+.gozen-origin .origin-feature dd strong{display:block;font-size:13px;font-weight:500;line-height:1.8;color:#e0e8ea}
+.gozen-origin .origin-feature dd>span{display:block;margin-top:4px}
+@media(max-width:760px) and (min-width:601px){
+ .gozen-origin .origin-feature{padding-inline:12px}
+ .gozen-origin .origin-feature dd{font-size:11px}
+ .gozen-origin .origin-feature dd strong{font-size:12px}
+}
+@media(max-width:600px){
+ .gozen-darkband.gozen-origin{padding:50px 0 46px}
+ .gozen-origin .origin-kicker{gap:5px;flex-direction:column;font-size:11px}
+ .gozen-origin .origin-kicker-en{border:0;padding:0;font-size:9px;letter-spacing:.19em}
+ .gozen-origin .origin-title{font-size:clamp(24px,6.8vw,33px);line-height:1.62;letter-spacing:.035em;margin-top:23px}
+ .gozen-origin .origin-title>span+span{margin-top:0}
+ .gozen-origin .origin-description{font-size:12px;line-height:2.05;margin-top:20px;letter-spacing:.02em}
+ .gozen-origin .origin-description>span{display:block}
+ .gozen-origin .origin-description-break{display:none}
+ .gozen-origin .origin-features{grid-template-columns:minmax(0,1fr);margin-top:29px}
+ .gozen-origin .origin-feature{display:grid;grid-template-columns:minmax(78px,.85fr) minmax(0,1.55fr);gap:16px;align-items:center;margin:0;padding:19px 8px;text-align:left}
+ .gozen-origin .origin-feature+.origin-feature{border-left:0;border-top:1px solid #38525f}
+ .gozen-origin .origin-feature-index{font-size:9px;letter-spacing:.08em}
+ .gozen-origin .origin-feature-title{font-size:22px;line-height:1.4;margin-top:5px}
+ .gozen-origin .origin-feature dd{margin:0;font-size:11px;line-height:1.85}
+ .gozen-origin .origin-feature dd strong{font-size:12px}
+ .gozen-origin .origin-feature dd>span{margin-top:4px}
+}
+@media(prefers-reduced-motion:reduce){
+ .gozen-origin *{animation:none;transition:none}
+}
 </style>
 </head><body>
 
@@ -251,17 +298,27 @@ html.is-loading,html.is-loading body{overflow:hidden}
       </div>
     </section>
 
-    <section class="gozen-darkband">
-      <div class="w band-grid">
-        <div>
-          <p class="ey">GOZENという一本 / THE LAND, BOTTLED</p>
-          <p class="big">山の植物、水のやわらかさ、<br>澄んだ空気まで。<br>GOZENは、白峰という土地の印象を<br>静かに閉じ込めたクラフトジンです。</p>
+    <section class="gozen-darkband gozen-origin" id="gozen-origin" aria-labelledby="gozen-origin-title">
+      <div class="w origin-inner">
+        <div class="origin-heading">
+          <p class="origin-kicker"><span>GOZENという一本</span><span class="origin-kicker-en" lang="en">THE LAND, BOTTLED</span></p>
+          <h2 class="origin-title" id="gozen-origin-title"><span>山の植物。白山の水。</span><span>白峰を、一杯に。</span></h2>
+          <p class="origin-description"><span>白峰産クロモジの香りと、</span><span>「御前の雫」のまろやかさ。</span><br class="origin-description-break"><span>この土地の個性が重なる、</span><span>クラフトジンGOZEN。</span></p>
         </div>
-        <div class="mini-facts">
-          <div><b>香り</b><span>AROMA OF KUROMOJI</span></div>
-          <div><b>水</b><span>WATER OF HAKUSAN</span></div>
-          <div><b>余韻</b><span>SOFT & CLEAR FINISH</span></div>
-        </div>
+        <dl class="origin-features" aria-label="GOZENを形づくる3つの要素">
+          <div class="origin-feature">
+            <dt><span class="origin-feature-index" lang="en">01 / AROMA</span><span class="origin-feature-title">香り</span></dt>
+            <dd><strong>白峰産クロモジ</strong><span>落ち着いた、爽やかな香り。</span></dd>
+          </div>
+          <div class="origin-feature">
+            <dt><span class="origin-feature-index" lang="en">02 / WATER</span><span class="origin-feature-title">水</span></dt>
+            <dd><strong>御前の雫</strong><span>白山の伏流水が、まろやかに。</span></dd>
+          </div>
+          <div class="origin-feature">
+            <dt><span class="origin-feature-index" lang="en">03 / FINISH</span><span class="origin-feature-title">余韻</span></dt>
+            <dd><strong>ほのかな山椒</strong><span>飲み終わりに、わずかな刺激。</span></dd>
+          </div>
+        </dl>
       </div>
     </section>
 
